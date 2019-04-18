@@ -8,6 +8,7 @@
 #include <vector>
 #include <algorithm>
 #include <sstream>
+#include "algorithm.h"
 using namespace std;
 /*
 	∞¥’’À≥ ±’ÎÀ≥–Ú¥Ú”°æÿ’Û
@@ -788,16 +789,16 @@ public:
 int _tmain(int argc, _TCHAR* argv[])
 {
 	string line;
-	while (getline(cin, line)) {
-		vector<int> nums1 = stringToIntegerVector(line);
-		getline(cin, line);
-		vector<int> nums2 = stringToIntegerVector(line);
+	//while (getline(cin, line)) {
+	//	vector<int> nums1 = stringToIntegerVector(line);
+	//	getline(cin, line);
+	//	vector<int> nums2 = stringToIntegerVector(line);
 
-		double ret = SolutionMedianSorted().findMedianSortedArrays(nums1, nums2);
+	//	double ret = SolutionMedianSorted().findMedianSortedArrays(nums1, nums2);
 
-		string out = to_string(ret);
-		cout << out << endl;
-	}
+	//	string out = to_string(ret);
+	//	cout << out << endl;
+	//}
 
 	//ListNode*head = new ListNode(0);
 	//ListNode*curNode = head;
@@ -820,6 +821,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//	heap_tmp.Insert(i);
 	//}
 	//heap_tmp.deleteTop();
+
+	GeometricAlgorithm::GeometricAlgorithmTest();
 	return 0;
 }
 
